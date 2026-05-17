@@ -10,9 +10,9 @@ namespace Lab10.Green
         protected GreenFileManager(string name, string folder, string file, string extension = "txt")
             : base(name, folder, file, extension) { }
 
-        public abstract void Serialize<T>(T obj) where T : Green;
+        public abstract void Serialize<T>(T obj) where T :Lab9.Green.Green;
 
-        public abstract T Deserialize<T>() where T : Green;
+        public abstract T Deserialize<T>() where T : Lab9.Green.Green;
 
         public override void EditFile(string text)
         {
